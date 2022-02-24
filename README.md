@@ -1,20 +1,25 @@
 # Laravel-WS
-Doc : https://laravel.com/docs/
-## Installation
-Pour ce workshop nous allons installer laravel via composer, il faut donc avant tout installer les prérequis:
+Doc : https://laravel.com/docs/9.x
+## Exercice 1 :
+Installer les dépendances et créer un nouveau projet Laravel.
 
-Linux : ```dnf install php composer```
+[HELP](https://laravel.com/docs/9.x#installation-via-composer)
 
-MacOS : ```brew install php composer```
+## Exercice 2 :
+Lancer le serveur de développement et accéder a la page d'accueil web du projet sur un navigateur.
 
-Une fois fait on peut nous pouvons créer un nouveau projet laravel:
+## Exercice 3 :
+Créer une route "/test" qui affiche "OK".
 
-'''composer create-project laravel/laravel example-app'''
+## Exercie 4 :
+Créer une route "/error" qui envoie un message d'erreur de votre choix dans la console et qui fait une redirection sur la route "/".
 
-Vous pouvez appeler votre projet comme vous le souhaitez en remplaçant "example-app" par le nom que vous voulez.
+## Exercice 5 :
+Ajouter un paramètre optionnel "{code?}" à la route "/error" et afficher le code si il y en a un.
 
-Nous pouvons ensuite rentrer dans ls dossier de notre projet et lancer notre serveur de développement avec:
+## Exercice 6 :
+Créer une route "/home/{user?}" qui affiche une vue blade que vous avez créé.
+La vue peut être très basique mais doit afficher "Home sweet Home", "admin_panel" si le user est "admin" et faire une redirection vers la route "/error/wrong_user" si le user est "damsweb". :)
 
-```php artisan serve```
-
-Notre serveur de développement est maintenant disponnible depuis notre navigateur sur l'addresse : http://127.0.0.1:8000
+## Exercice 7 :
+Ameliorer la vue home et y ajouter une css.
